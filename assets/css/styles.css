@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "Sequel Sans";
+    src: url("../fonts/Sequel Sans Medium Body.otf");
+}
+
+
+
+.secao-1 {
+    background-image: linear-gradient(to bottom, #fff 51.4%, #333 51.4%);
+    height: 700px;
+}
+
+.secao-1 .container .row .topo {
+    margin-top: 60px;
+    width: 100%;
+    /*background-color: aqua;*/
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.secao-1 .container .row .topo img {
+    margin-bottom: 100px;
+}
+
+
+
+.secao-1 .container .row .coluna-esquerda h1 {
+    color: #333;
+    font-family: "Sequel Sans";
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58px; 
+}
+
+.cor-rosa {
+    color:#FA21BD;
+}
+
+
+
+.secao-1 .container .row .coluna-esquerda p { 
+    color: #333;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.secao-1 .container .row .coluna-direita img {
+    width: 547px;
+    height: auto;
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    .secao-1 {
+        background-image: linear-gradient(to right, #fff 51.4%, #333 51.4%);
+       
+        height: 800px;
+       
+    }
+    
+    .coluna-esquerda {
+        width: 51.4%;
+    }
+    
+    .coluna-direita {
+        width: 48.6%;
+    }   
+}
+
+
