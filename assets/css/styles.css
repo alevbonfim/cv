@@ -7,11 +7,12 @@
 
 .secao-1 {
     background-image: linear-gradient(to bottom, #fff 51.4%, #333 51.4%);
-    height: 700px;
+    min-height: 700px;
+    padding-bottom: 40px;
 }
 
 .secao-1 .container .row .topo {
-    margin-top: 60px;
+    margin-top: 35px;
     width: 100%;
     /*background-color: aqua;*/
     display: flex;
@@ -19,8 +20,16 @@
     
 }
 
-.secao-1 .container .row .topo img {
-    margin-bottom: 100px;
+.secao-1 .container .row .topo {
+    margin-bottom: 35px;
+}
+
+.secao-1 .container .row .topo ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 7px;
+
 }
 
 
@@ -28,10 +37,11 @@
 .secao-1 .container .row .coluna-esquerda h1 {
     color: #333;
     font-family: "Sequel Sans";
-    font-size: 58px;
+    font-size: 37px;
     font-style: normal;
     font-weight: 700;
-    line-height: 58px; 
+    line-height: 42px;
+    margin-bottom: 26px; 
 }
 
 .cor-rosa {
@@ -43,28 +53,107 @@
 .secao-1 .container .row .coluna-esquerda p { 
     color: #333;
     font-family: Roboto;
-    font-size: 24px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-bottom: 44px;
 }
 
-.secao-1 .container .row .coluna-direita img {
-    width: 547px;
-    height: auto;
+.secao-1 .container .row a {
+    text-decoration: none;
+}
+
+.secao-1 .container .row a button {
+    background-color: #FA21BD;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 35px;
+    color: #333;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700px;
+    line-height: 113.3%;
+    width: 207px;
+    height: 42px;
+    flex-shrink: 0;
+    display: block;
+    margin: auto;
+
+}
+
+.secao-1 .container .row .coluna-esquerda a button {
+    display: none;
 }
 
 
 
+.secao-1 .container .row .coluna-direita .fundo-rosa {
+    background-color: #FA21BD;
+    display: block;
+    position: relative;
+    left: 3.5px;
+    margin-bottom: 35px;
+    
 
+}
+
+.secao-1 .container .row .coluna-direita .fundo-rosa img {
+    position: relative;
+    right: 7px;
+    bottom: 7px;
+
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .secao-1 .container .row .coluna-direita {
+        padding-left: 25px;
+        padding-right: 25px;
+    
+    }
+}
 
 @media screen and (min-width: 768px) {
     .secao-1 {
-        background-image: linear-gradient(to right, #fff 51.4%, #333 51.4%);
-       
-        height: 800px;
+        background-image: linear-gradient(to right, #fff 52.2%, #333 52.2%);
+        min-height: 700px;
        
     }
+    .secao-1 .container .row .topo {
+        margin-top: 60px;
+        margin-bottom: 100px;
+    }
+    .secao-1 .container .row .coluna-esquerda h1 {
+        font-size: 58px;
+        line-height: 70px;
+    }
+    .secao-1 .container .row .coluna-esquerda p {
+        font-size: 24px;
+        font-weight: 400px;
+    }
+    .secao-1 .container .row .coluna-esquerda a button {
+        padding: 12px 35px;
+        display: block;
+        margin: 0;
+    }
+    .secao-1 .container .row .coluna-direita a button {
+        display: none;
+    }
+    .secao-1 .container .row .coluna-direita .fundo-rosa {
+        left: 0;
+        margin-bottom: 0;
+    }
+
+    .secao-1 .container .row .coluna-direita .fundo-rosa img {
+        right: 12px;
+        bottom: 12px;
+
+    }
+    
     
     .coluna-esquerda {
         width: 51.4%;
