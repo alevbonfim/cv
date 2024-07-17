@@ -2,7 +2,7 @@
     font-family: "Sequel Sans";
     src: url("../fonts/Sequel Sans Medium Body.otf");
 }
-
+  
 /* Títulos */
 .section-title h1, .section-title h2, 
 .section-title h3, .section-title h4,
@@ -40,6 +40,12 @@
     display: flex;
     justify-content: space-between;
     
+}
+
+.secao-1 .container .row .topo h2{
+    font-family: "Alex Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .secao-1 .container .row .topo {
@@ -124,7 +130,7 @@
 
 }
 
-.secao-1 .container .row .coluna-direita img {
+.secao-1 .container .row .coluna-direita .fundo-rosa img {
     position: relative;
     right: 7px;
     bottom: 7px;
@@ -389,30 +395,6 @@
 
 }
 
-/*.secao-5 .container .row a button {
-    background-color: #FA21BD;
-    border: none;
-    border-radius: 30px;
-    padding: 12px 35px;
-    color: #333;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 16px;
-    display: block;
-    margin: auto;
-    font-style: normal;
-    font-weight: 700px;
-    line-height: 113.3%;
-    transition: 0.2s;
-    
-}
-
-.secao-5 .container .row a button:hover {
-    background-color: #333;
-    color: #fff;
-    transform: scale(1.05);
-
-}*/
 
 @media screen and (min-width: 768px) {
     .grid-container {
@@ -432,6 +414,12 @@
 .footer .logo-footer {
     margin-bottom: 49px;
     
+}
+
+.footer .logo-footer h2 {
+    font-family: "Alex Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .footer .logo-contact {
@@ -485,14 +473,14 @@
 
 .copyrigth h5 {
     color: #333;
-    font-family: Roboto;
+    font-family: "Alex Brush", cursive;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     display: block;
     text-align: center;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .footer .container .row  {
@@ -505,12 +493,7 @@
         padding-top: 106px;
         padding-bottom: 31px;
     }
-    .footer .container .row .logo-footer img {
-        display: block;
-        width: 160px;
-        height: auto;
-        /*flex-shrink: 0;*/
-    }
+   
     .footer .logo-contact {
         display: block;
         margin-left: auto;
